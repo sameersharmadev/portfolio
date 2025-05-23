@@ -1,6 +1,4 @@
 import { NavLink } from 'react-router';
-import branding from '../assets/img/branding_header.png';
-
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
@@ -10,7 +8,7 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center bg-headerBeige text-black shadow-sm sticky top-0 z-50">
+    <div className="flex justify-between items-center bg-headerBeige text-black shadow-sm sticky top-0 z-50 h-10">
       {/* Navigation Links */}
       <div className="flex">
         {navLinks.map(({ to, label }) => (
@@ -19,7 +17,7 @@ export default function Header() {
             to={to}
             className={({ isActive }) =>
               `p-2 px-6 transition-all duration-200 ease-in-out 
-              ${isActive ? 'bg-black text-headerBeige' : 'hover:bg-black hover:text-headerBeige'}`
+              ${isActive ? 'bg-black text-headerBeige' : 'hover:bg-blackHover hover:text-headerBeige'}`
             }
           >
             {label}
@@ -28,8 +26,10 @@ export default function Header() {
       </div>
 
       {/* Branding */}
-      <div className="text-lg tracking-wide font-bold tracking-wider text-black uppercase select-none cursor-default px-8">
+      <div className="gap-4 flex items-center pt-1">
+        <div className="text-3xl tracking-wider text-black uppercase select-none cursor-default px-8 font-bebas">
         {"< Sameer Sharma />"}
+        </div>
       </div>
     </div>
   );
