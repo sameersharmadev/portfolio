@@ -4,9 +4,9 @@ import {Link} from 'react-router'
 import Terminal from './Terminal'
 export default function About(){
     return(
-        <div className="relative h-[calc(100vh-2.5rem)] flex justify-between items-center fade-in-section bg-black text-lightBeige">
-            <div className="w-full md:w-1/2 ml-4 mr-4 md:ml-20 md:mr-4 md:h-[66vh]">
-                <h2 className="text-4xl font-semibold -mt-8 mb-6">About me</h2>
+        <div className="relative md:h-[calc(100vh-2.5rem)] flex justify-between items-center fade-in-section bg-black text-lightBeige">
+            <div className="w-full lg:w-1/2 ml-4 mr-4 md:ml-20 md:mr-20 lg:mr-4 md:h-[66vh]">
+                <h2 className="text-xl md:text-4xl font-semibold -mt-8 mb-6">About me</h2>
                     <ul class="flex flex-col mb-4">
                     <li class="relative pl-8 pb-4">
                         <span class="w-4 h-4 bg-lightBeige rounded-full absolute top-0 left-0"></span>
@@ -48,12 +48,14 @@ export default function About(){
                         <p className="font-semibold">Bachelor of Technology (Computer Science Engineering)</p>
                         <p>Maharaja Agrasen Institute of Technology [2023-2027]</p>
                     </div>
+                    
                 </div>
                 <Link to="/about" className="block w-full text-center md:text-xl bg-lightBeige text-black p-1">
                     View more
                 </Link>
+                <span className="hidden md:block lg:hidden mt-4">*Terminal version available on desktop</span>
             </div>
-            <div className="hidden md:block md:w-1/2">
+            <div className="hidden lg:block md:w-1/2">
                 <Terminal/>
             </div>
         </div>

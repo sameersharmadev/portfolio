@@ -32,10 +32,10 @@ export default function Terminal() {
         break;
       case "/projects":
         response =
-          "Check out my React Portfolio, Game Tracker App, and Weather CLI (see projects below).";
+          "This feature will be added soon";
         break;
       case "/hobbies":
-        response = "-Some of my hobbies include: \nindie game dev (working on a small project), playing video games, and reading books";
+        response = "- Some of my hobbies include: \nindie game dev (working on a small project), playing video games, and reading books";
         break;
       case "/contact":
         setHistory((prev) => [
@@ -150,6 +150,11 @@ export default function Terminal() {
     <div
       ref={containerRef}
       className="w-full max-w-xl mx-auto rounded-lg shadow-lg font-mono text-green-500 overflow-hidden flex flex-col h-[66vh]"
+      onClick={() => {
+        if (!destroyed) {
+          inputRef.current?.focus();
+        }
+      }}
     >
       {/*Header bar */}
       <div className="flex items-center gap-2 px-3 py-2 bg-gray-900 select-none">
@@ -160,7 +165,6 @@ export default function Terminal() {
 
       {/* Terminal content */}
       <div className="p-4 flex-1 overflow-y-auto bg-gray-800 terminal-scrollbar">
-        {/* Initial welcome message */}
         {history.length === 0 &&(
           <div className="mb-2 whitespace-pre-wrap">
             Welcome to the terminal! Type /help to get started<br/>
@@ -168,7 +172,6 @@ export default function Terminal() {
           </div>
         )}
 
-        {/* Command history */}
         {history.map((line, i) => (
         <div key={i} className="whitespace-pre-wrap">
           {typeof line === "string" ? (

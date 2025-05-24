@@ -23,7 +23,7 @@ export default function Hero(){
         <div className="flex flex-col px-8 md:px-0">
           <p className="-mt-4 md:text-2xl">Hello there! I am</p>
           <h1 className="text-4xl md:text-7xl md:mb-2">Sameer Sharma</h1>
-          <h2 className="md:text-5xl mb-2 md:mb-4">Front end web developer</h2>
+          <h2 className="md:text-5xl mb-2 md:mb-4">Full stack web developer</h2>
           <p className="md:text-2xl mb-2 md:mb-4">I build user centric, scalable web applications</p>
 
           {/* Location + Social Icons */}
