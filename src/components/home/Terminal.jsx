@@ -11,7 +11,6 @@ export default function Terminal() {
 
 
   const handleCommand = (cmd) => {
-    if (destroyed) return;
     let response = "";
 
     switch (cmd.toLowerCase()) {
