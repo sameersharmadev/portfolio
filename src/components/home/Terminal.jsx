@@ -119,7 +119,7 @@ export default function Terminal() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          inputRef.current?.focus();
+          inputRef.current?.focus({ preventScroll: true });
         } else {
           inputRef.current?.blur();
         }
@@ -137,21 +137,23 @@ export default function Terminal() {
   }, []);
   
   useEffect(() => {
-    if (!destroyed && inputRef.current) {
-      inputRef.current.focus();
+    if (!destroyed && inputRef.current && containerRef.current?.classList.contains("visible")) {
+      inputRef.current.focus({ preventScroll: true });
     }
   }, [destroyed]);
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (containerRef.current?.classList.contains("visible")) {
+      bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
   }, [history, destroyMessage]);
   
   return (
     <div
       ref={containerRef}
-      className="w-full max-w-xl mx-auto rounded-lg shadow-lg font-mono text-green-500 overflow-hidden flex flex-col h-[66vh]"
+      className="w-full max-w-xl mx-auto rounded-lg shadow-lg font-mono text-green-500 overflow-hidden flex flex-col h-[66vh] fade-in-section"
       onClick={() => {
-        if (!destroyed) {
-          inputRef.current?.focus();
+        if (!destroyed && containerRef.current?.classList.contains("visible")) {
+          inputRef.current?.focus({ preventScroll: true });
         }
       }}
     >
