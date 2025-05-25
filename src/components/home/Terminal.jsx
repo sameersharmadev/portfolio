@@ -150,7 +150,7 @@ export default function Terminal() {
   return (
     <div
       ref={containerRef}
-      className="w-full max-w-xl mx-auto rounded-lg shadow-lg font-mono text-green-500 overflow-hidden flex flex-col h-[66vh] fade-in-section"
+      className="w-full max-w-xl mx-auto rounded-lg shadow-lg font-mono text-green-500 overflow-hidden flex flex-col h-[66vh] fade-in-section md:mr-20"
       onClick={() => {
         if (!destroyed && containerRef.current?.classList.contains("visible")) {
           inputRef.current?.focus({ preventScroll: true });
@@ -166,12 +166,13 @@ export default function Terminal() {
 
       {/* Terminal content */}
       <div className="p-4 flex-1 overflow-y-auto bg-gray-800 terminal-scrollbar">
-        {history.length === 0 &&(
+        
           <div className="mb-2 whitespace-pre-wrap">
             Welcome to the terminal! Type /help to get started<br/>
-            careful! an egg is hiding somewhere. DONT <s>/</s>free him.
+            Commands: /help, /techstack, /skills, /education, /projects, /hobbies,/contact, /socials, /resume, /clear<br/>
+            *Careful! an egg is hiding somewhere. DONT <s>/free</s> him.<br/>
           </div>
-        )}
+        
 
         {history.map((line, i) => (
         <div key={i} className="whitespace-pre-wrap">

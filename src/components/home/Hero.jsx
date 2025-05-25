@@ -14,7 +14,7 @@ import heroimg from '../../assets/img/heroimg.webp'
 
 export default function Hero(){
   return(
-    <div className="relative h-[calc(100vh-2.5rem)] flex justify-center items-center fade-in-section">
+    <div className="relative h-[calc(100vh-2.5rem)] flex justify-center items-center bg-lightBeige fade-in-hero">
       {/* Main content */}
       <div className="flex flex-col md:flex-row gap-8 items-center">
         <div className="mt-8 md:m-0 ">

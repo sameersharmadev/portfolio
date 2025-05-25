@@ -5,8 +5,14 @@
     --font-bebas: Bebas Neue, Inter, sans-serif;
     --color-headerBeige:rgb(245,245,245);
     --color-lightBeige:rgb(247,247,247);
+    --color-secondaryBeige: rgb(200, 200, 200);
     --color-black:rgb(40,52,58);
     --color-blackHover:rgb(55, 70, 80);
+    --color-blackCards:rgba(255, 255, 255, 0.05);
+}
+.fade-in-hero {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 .fade-in-section {
     opacity: 0;
@@ -17,6 +23,9 @@
 .fade-in-section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+.fade-in-hero.visible {
+  opacity: 1;
 }
 .terminal-scrollbar::-webkit-scrollbar {
     width: 8px;

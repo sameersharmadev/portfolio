@@ -1,6 +1,8 @@
 import Header from './components/Header'
 import Hero from './components/home/Hero'
 import About from './components/home/About'
+import Projects from './components/home/Projects'
+import Techstack from './components/home/Techstack'
 import {useEffect} from 'react'
 function App() {
     useEffect(() => {
@@ -22,6 +24,8 @@ function App() {
 
       const sections = document.querySelectorAll('.fade-in-section');
       sections.forEach((section) => observer.observe(section));
+      const heros = document.querySelectorAll('.fade-in-hero');
+      heros.forEach((hero) => observer.observe(hero));
 
       return () => observer.disconnect();
     }, []);
@@ -31,6 +35,8 @@ function App() {
       <Header/>
       <Hero/>
       <About/>
+      <Projects/>
+      <Techstack/>
     </>
   )
 }
