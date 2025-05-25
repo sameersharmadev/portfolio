@@ -23,7 +23,7 @@ export default function Terminal() {
         break;
       case "/skills":
         response =
-          "Technical Skills: \nProgramming Languages: C++, Javascript, Java, Python \nFrameworks: React, Node.js, Express.js, Tailwind \nDatabase: MongoDB, PostgreSQL \nTools: Linux, Git, Docker, VS Code\n\nSoft Skills: \nCommunication and collaboration\nProblem solving and critical thinking\nAdaptability and quick learning\nTime management and organization";
+          "Technical Skills: \nProgramming Languages: C++, Javascript, Java, Python \nFrameworks: React, Node.js, Express.js, Tailwind \nDatabase: MongoDB, PostgreSQL \nTools: Figma, Linux, Git, Docker, VS Code\n\nSoft Skills: \nCommunication and collaboration\nProblem solving and critical thinking\nAdaptability and quick learning\nTime management and organization";
         break;
       case "/education":
         response =
