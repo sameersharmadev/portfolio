@@ -143,14 +143,14 @@ export default function Terminal() {
   }, [destroyed]);
   useEffect(() => {
     if (containerRef.current?.classList.contains("visible")) {
-      bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+      bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
   }, [history, destroyMessage]);
   
   return (
     <div
       ref={containerRef}
-      className="w-full max-w-xl mx-auto rounded-lg shadow-lg font-mono text-green-500 overflow-hidden flex flex-col h-[66vh] fade-in-section md:mr-20"
+      className="w-full max-w-xl mx-auto rounded-lg shadow-lg font-mono text-green-500 overflow-y-auto flex flex-col h-[66vh] fade-in-section md:mr-20"
       onClick={() => {
         if (!destroyed && containerRef.current?.classList.contains("visible")) {
           inputRef.current?.focus({ preventScroll: true });
