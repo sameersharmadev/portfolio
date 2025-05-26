@@ -3,7 +3,6 @@ import { Link } from 'react-router'
 import { 
   faLocationDot, 
   faEnvelope, 
-  faPhone 
 } from '@fortawesome/free-solid-svg-icons'
 import { 
   faGithub, 
@@ -45,9 +44,6 @@ export default function Hero(){
               </a>
               <a href="mailto:sameersh571@gmail.com" className="hover:text-blackHover transition">
                 <FontAwesomeIcon icon={faEnvelope} size="lg" />
-              </a>
-              <a href="tel:+917827114083" className="hover:text-blackHover transition">
-                <FontAwesomeIcon icon={faPhone} size="lg" />
               </a>
               
             </div>

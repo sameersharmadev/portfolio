@@ -45,7 +45,10 @@ export default function Terminal() {
             <br />
             - contact:{" "}
             <a href="/contact" target="_blank" className="underline text-blue-300">contact form</a>
+            <br/>
+            or connect through my /socials
           </div>,
+          
         ]);
         return;     
       case "/socials":

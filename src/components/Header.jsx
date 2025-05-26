@@ -16,7 +16,7 @@ export default function Header() {
   }
   return (
     <>
-    <div className="flex justify-between items-center bg-headerBeige text-black shadow-sm sticky top-0 z-50 h-10 fade-in-hero">
+    <div className="flex justify-between items-center bg-headerBeige text-black shadow-sm sticky top-0 z-50 h-10 fade-in">
       {/* Navigation Links */}
       <div className="hidden md:flex">
         {navLinks.map(({ to, label }) => (

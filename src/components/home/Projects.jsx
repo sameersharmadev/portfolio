@@ -9,7 +9,7 @@ export default function Projects(){
             </div>
             <div className="flex gap-8">
             {featured.map(elt => {
-                return (<div className="flex flex-col w-1/3 rounded-md border border-white/20">
+                return (<div className="flex flex-col w-1/3 hover:scale-101 rounded-md border border-white/20">
                     <div className="flex items-center gap-2 px-3 py-2 bg-gray-900 select-none rounded-md rounded-b-none border border-gray-900">
                         <span className="w-3 h-3 rounded-full bg-red-500"></span>
                         <span className="w-3 h-3 rounded-full bg-yellow-500"></span>

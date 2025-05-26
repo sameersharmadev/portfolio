@@ -1,7 +1,7 @@
 export default function Techstack() {
     function TechCard({ icon, title, desc, bgColor }) {
       return (
-        <div className="flex flex-col items-center backdrop-blur-md bg-blackCards rounded-lg shadow-sm md:flex-row md:w-78">
+        <div className="flex hover:scale-102 cursor-default flex-col items-center backdrop-blur-md bg-blackCards rounded-lg shadow-sm md:flex-row md:w-78">
           <div
             className="p-4 flex justify-center items-center rounded-lg rounded-r-none shadow-inner backdrop-blur-md"
             style={{ backgroundColor: bgColor }}
