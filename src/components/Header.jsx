@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="flex justify-between items-center bg-headerBeige text-black shadow-sm sticky top-0 z-50 h-10 2xl:h-24 fade-in">
+      <div className="flex justify-between items-center bg-headerBeige text-black shadow-sm sticky top-0 z-50 h-10 md:h-10 xl:h-20 2xl:h-24 fade-in">
         {/* Navigation Links */}
         <div className="hidden md:flex">
           {navLinks.map(({ to, label }) => (
@@ -27,7 +27,7 @@ export default function Header() {
               key={to}
               to={to}
               className={({ isActive }) =>
-                `p-2 2xl:p-8 px-6 2xl:px-16 2xl:text-3xl transition-all duration-200 ease-in-out 
+                `p-2 md:p-2 xl:p-6 2xl:p-8 px-6 md:px-8 xl:px-12 2xl:px-16 text-sm md:text-lg xl:text-2xl 2xl:text-4xl transition-all duration-200 ease-in-out 
                 ${isActive ? 'bg-black text-headerBeige' : 'hover:bg-blackHover hover:text-headerBeige'}`
               }
             >
@@ -40,29 +40,29 @@ export default function Header() {
         <div className="gap-4 flex items-center pt-1">
           <Link
             to="/"
-            className="text-xl md:text-3xl 2xl:text-6xl tracking-wider text-black uppercase select-none cursor-default px-4 md:px-8 2xl:px-12 font-bebas"
+            className="text-xl md:text-3xl xl:text-5xl 2xl:text-6xl tracking-wider text-black uppercase select-none cursor-default px-4 xl:px-10 2xl:px-12 font-bebas"
           >
             {"< Sameer Sharma />"}
           </Link>
         </div>
 
         {/* Menu */}
-        <div className="md:hidden px-4" onClick={toggleMenu}>
-          <FontAwesomeIcon icon={faBars} size="lg" />
+        <div className="md:hidden px-4 xl:px-6 2xl:px-8" onClick={toggleMenu}>
+          <FontAwesomeIcon icon={faBars} size="lg" className="text-xl xl:text-2xl 2xl:text-3xl" />
         </div>
       </div>
 
       {menuToggle && (
-        <div className="absolute w-full bg-lightBeige flex flex-col gap-2 shadow-md z-50">
+        <div className="fixed w-full bg-lightBeige flex flex-col gap-2 xl:gap-4 2xl:gap-6 shadow-md z-50">
           {navLinks.map(({ to, label }) => (
             <NavLink
               key={to}
               to={to}
               className={({ isActive }) =>
-                `p-2 px-6 2xl:px-8 transition-all duration-200 ease-in-out 
+                `p-2 px-6 xl:px-8 2xl:px-10 text-sm md:text-lg xl:text-2xl 2xl:text-3xl transition-all duration-200 ease-in-out 
                 ${isActive ? 'bg-black text-headerBeige' : 'hover:bg-blackHover hover:text-headerBeige'}`
               }
-              onClick={() => setMenuToggle(false)} // Close menu on link click
+              onClick={() => setMenuToggle(false)}
             >
               {label}
             </NavLink>

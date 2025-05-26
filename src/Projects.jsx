@@ -3,7 +3,6 @@ function Projects() {
   
   return (
     <>
-      <Header/>
     </>
   )
 }

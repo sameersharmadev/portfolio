@@ -9,6 +9,8 @@
     --color-black:rgb(40,52,58);
     --color-blackHover:rgb(55, 70, 80);
     --color-blackCards:rgba(255, 255, 255, 0.05);
+    --breakpoint-xl:150rem;
+    --breakpoint-2xl:200rem;
 }
 .fade-in-hero {
   opacity: 0;

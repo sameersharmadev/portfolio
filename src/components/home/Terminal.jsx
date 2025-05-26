@@ -9,7 +9,6 @@ export default function Terminal() {
   const containerRef = useRef(null);
   const bottomRef = useRef(null);
 
-
   const handleCommand = (cmd) => {
     let response = "";
 
@@ -153,63 +152,61 @@ export default function Terminal() {
   return (
     <div
       ref={containerRef}
-      className="w-10/12 2xl:w-11/12 mx-auto rounded-lg shadow-lg font-mono text-green-500 overflow-y-auto flex flex-col h-[66vh] fade-in-section md:mr-20 2xl:mr-48 2xl:text-4xl 2xl:leading-loose 2xl:h-[60vh]"
+      className="w-10/12 xl:w-11/12 2xl:w-11/12 mx-auto rounded-lg shadow-lg font-mono text-green-500 overflow-y-auto flex flex-col h-[66vh] xl:h-[72vh] 2xl:h-[60vh] fade-in-section md:mr-20 xl:mr-32 2xl:mr-48 xl:text-3xl 2xl:text-4xl xl:leading-relaxed 2xl:leading-loose xl:mt-32 2xl:-mt-32"
       onClick={() => {
         if (!destroyed && containerRef.current?.classList.contains("visible")) {
           inputRef.current?.focus({ preventScroll: true });
         }
       }}
     >
-      {/*Header bar */}
-      <div className="flex items-center gap-2 px-3 py-2 2xl:py-4 bg-gray-900 select-none">
-        <span className="w-3 h-3 2xl:w-6 2xl:h-6 rounded-full bg-red-500"></span>
-        <span className="w-3 h-3 2xl:w-6 2xl:h-6 rounded-full bg-yellow-500"></span>
-        <span className="w-3 h-3 2xl:w-6 2xl:h-6 rounded-full bg-green-500"></span>
+      {/* Header bar */}
+      <div className="flex items-center gap-2 px-3 py-2 xl:py-3 2xl:py-4 bg-gray-900 select-none">
+        <span className="w-3 h-3 xl:w-5 xl:h-5 2xl:w-6 2xl:h-6 rounded-full bg-red-500"></span>
+        <span className="w-3 h-3 xl:w-5 xl:h-5 2xl:w-6 2xl:h-6 rounded-full bg-yellow-500"></span>
+        <span className="w-3 h-3 xl:w-5 xl:h-5 2xl:w-6 2xl:h-6 rounded-full bg-green-500"></span>
       </div>
 
       {/* Terminal content */}
       <div className="p-4 flex-1 overflow-y-auto bg-gray-800 terminal-scrollbar">
-        
-          <div className="mb-2 whitespace-pre-wrap">
-            Welcome to the terminal! Type /help to get started<br/>
-            Commands: /help, /techstack, /skills, /education, /projects, /hobbies,/contact, /socials, /resume, /clear<br/>
-            *Careful! an egg is hiding somewhere. DONT <s>/free</s> him.<br/>
-          </div>
-        
+        <div className="mb-2 whitespace-pre-wrap">
+          Welcome to the terminal! Type /help to get started<br />
+          Commands: /help, /techstack, /skills, /education, /projects, /hobbies, /contact, /socials, /resume, /clear<br />
+          *Careful! an egg is hiding somewhere. DONT <s>/free</s> him.<br />
+        </div>
 
         {history.map((line, i) => (
-        <div key={i} className="whitespace-pre-wrap">
-          {typeof line === "string" ? (
-            line.startsWith(">") ? (
-              <span className="text-green-400">{line}</span>
+          <div key={i} className="whitespace-pre-wrap">
+            {typeof line === "string" ? (
+              line.startsWith(">") ? (
+                <span className="text-green-400">{line}</span>
+              ) : (
+                <div className="pl-4">{line}</div>
+              )
             ) : (
-              <div className="pl-4">{line}</div>
-            )
-          ) : (
-            line
-          )}
-        </div>
-      ))}
+              line
+            )}
+          </div>
+        ))}
 
-      {destroyMessage && (
-        <pre className="text-center whitespace-pre-wrap mt-4 font-bold text-red-300">{destroyMessage}</pre>
-      )}
-      <div ref={bottomRef}></div>
+        {destroyMessage && (
+          <pre className="text-center whitespace-pre-wrap mt-4 font-bold text-red-300">{destroyMessage}</pre>
+        )}
+        <div ref={bottomRef}></div>
 
-      {/* Input form */}
-      {!destroyed&&<form onSubmit={handleSubmit} className="flex mt-2">
-        <span className="mr-2 text-green-400">$</span>
-        <input
-          ref={inputRef}
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          className="bg-gray-800 border-none outline-none text-green-500 w-full"
-        />
-      </form>}
+        {/* Input form */}
+        {!destroyed && (
+          <form onSubmit={handleSubmit} className="flex mt-2">
+            <span className="mr-2 text-green-400">$</span>
+            <input
+              ref={inputRef}
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              className="bg-gray-800 border-none outline-none text-green-500 w-full"
+            />
+          </form>
+        )}
       </div>
-      
     </div>
-    
   );
 }
