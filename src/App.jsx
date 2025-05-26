@@ -3,6 +3,7 @@ import Hero from './components/home/Hero'
 import About from './components/home/About'
 import Projects from './components/home/Projects'
 import Techstack from './components/home/Techstack'
+import Footer from './components/Footer'
 import Contact from './components/home/Contact'
 import {useEffect} from 'react'
 function App() {
@@ -39,6 +40,7 @@ function App() {
       <Projects/>
       <Techstack/>
       <Contact/>
+      <Footer/>
     </>
   )
 }
