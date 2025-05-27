@@ -3,7 +3,7 @@ import featured from '../../assets/data/projects';
 
 export default function Projects() {
   return (
-    <div className="mt-16 md:mt-0 flex flex-col fade-in-section justify-center bg-black text-lightBeige px-4 md:px-16 lg:px-20 lg:py-8 xl:px-32 xl:py-12 2xl:px-48 2xl:py-16 xl:mt-20">
+    <div className="mt-16 md:mt-20 flex flex-col fade-in-section justify-center bg-black text-lightBeige px-4 md:px-16 lg:px-20 lg:py-8 xl:px-32 xl:py-12 2xl:px-48 2xl:py-16 xl:mt-20">
       {/* Header Section */}
       <div className="flex flex-row justify-between items-center mb-8 xl:mb-16 2xl:mb-32">
         <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-8xl font-semibold">Featured work</h2>
@@ -54,13 +54,19 @@ export default function Projects() {
                 {/* Buttons */}
                 <div className="flex gap-4 xl:gap-6 2xl:gap-8 mt-4 xl:mt-6 2xl:mt-8">
                   <button
-                    className="text-black bg-lightBeige p-2 px-4 md:p-3 md:px-6 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl"
+                    className="text-black text-sm lg:text-base bg-lightBeige p-2 px-4 md:p-2 md:px-3 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl"
+                    onClick={() => window.open(elt.website, '_blank')}
+                  >
+                    View Project
+                  </button>
+                  <button
+                    className="text-lightBeige text-sm lg:text-base bg-transparent p-2 px-4 md:p-2 md:pl-3 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl"
                     onClick={() => window.open(elt.website, '_blank')}
                   >
                     Website
                   </button>
                   <button
-                    className="text-lightBeige bg-gray-700 p-2 px-4 md:p-3 md:px-6 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl"
+                    className="text-lightBeige text-sm lg:text-base bg-transparent p-2 px-4 md:p-2 md:pl-3 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl"
                     onClick={() => window.open(elt.source, '_blank')}
                   >
                     Source code

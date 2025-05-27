@@ -8,6 +8,8 @@ import Projects from './Projects.jsx'
 import About from './About.jsx'
 import './style.css'
 import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
@@ -18,6 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
+      <Footer/>
     </Router>
   </StrictMode>,
 )

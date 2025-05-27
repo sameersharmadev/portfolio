@@ -129,14 +129,14 @@ export default function Contact() {
           <div className="flex items-center mt-4">
             <button
               type="submit"
-              className="bg-[#303e44] group min-w-[160px] flex justify-between mt-4 hover:bg-headerBeige hover:text-black border border-white/20 py-3 px-4 text-sm font-medium text-center text-white rounded-lg sm:w-fit flex gap-2 items-center xl:text-3xl 2xl:text-4xl xl:p-6 2xl:p-8"
+              className="hover:bg-[#303e44] group min-w-[160px] flex justify-between mt-4 bg-headerBeige text-black border border-white/20 py-3 px-4 text-sm font-medium text-center hover:text-white rounded-lg sm:w-fit flex gap-2 items-center xl:text-3xl 2xl:text-4xl xl:p-6 2xl:p-8"
               disabled={loading}
             >
               {loading ? (
                 <>
                   Sending message
                   <svg
-                    className="animate-spin h-4 w-4 text-lightBeige group-hover:text-black xl:h-6 xl:w-6"
+                    className="animate-spin h-4 w-4 group-hover:text-lightBeige text-black xl:h-6 xl:w-6"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"

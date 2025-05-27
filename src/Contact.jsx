@@ -1,14 +1,7 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faPaperPlane,
-  faEnvelope,
-} from '@fortawesome/free-solid-svg-icons';
-import {
-  faGithub,
-  faLinkedin,
-  faXTwitter,
-} from '@fortawesome/free-brands-svg-icons';
+import { faPaperPlane, faEnvelope,} from '@fortawesome/free-solid-svg-icons';
+import {faGithub, faLinkedin,faXTwitter,} from '@fortawesome/free-brands-svg-icons';
 export default function Contact() {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -73,6 +66,7 @@ export default function Contact() {
   };
 
   return (
+    <>
     <section className="relative mx-8 lg:h-[calc(100vh-5rem)] xl:h-[calc(90vh-5rem)] 2xl:h-[calc(80vh-5rem)] mt-16 md:mt-0 flex flex-col lg:flex-row justify-between items-center fade-in bg-black text-lightBeige xl:gap-12 2xl:gap-16 xl:mx-32 2xl:mx-64">
       <div className="lg:ml-20 lg:w-1/2 md:w-10/12">
         <h2 className="flex text-xl md:text-4xl md:mt-16 lg:mt-0 font-semibold mb-2 xl:text-5xl 2xl:text-6xl xl:mb-4 2xl:mb-6">Contact me...</h2>
@@ -128,14 +122,14 @@ export default function Contact() {
           <div className="flex items-center mt-4">
             <button
               type="submit"
-              className="bg-[#303e44] group min-w-[160px] flex justify-between mt-4 hover:bg-headerBeige hover:text-black border border-white/20 py-3 px-4 text-sm font-medium text-center text-white rounded-lg sm:w-fit flex gap-2 items-center xl:text-3xl 2xl:text-4xl xl:p-6 2xl:p-8"
+              className="hover:bg-[#303e44] group min-w-[160px] flex justify-between mt-4 bg-headerBeige text-black border border-white/20 py-3 px-4 text-sm font-medium text-center hover:text-white rounded-lg sm:w-fit flex gap-2 items-center xl:text-3xl 2xl:text-4xl xl:p-6 2xl:p-8"
               disabled={loading}
             >
               {loading ? (
                 <>
                   Sending message
                   <svg
-                    className="animate-spin h-4 w-4 text-lightBeige group-hover:text-black xl:h-6 xl:w-6"
+                    className="animate-spin h-4 w-4 group-hover:text-lightBeige text-black xl:h-6 xl:w-6"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -174,5 +168,7 @@ export default function Contact() {
         <Socials icon={faEnvelope} name="Email" link="mailto:sameersh571@gmail.com" />
       </div>
     </section>
+    
+    </>
   );
 }

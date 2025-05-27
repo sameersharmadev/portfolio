@@ -46,7 +46,7 @@ export default function About() {
                         <FontAwesomeIcon icon={faGraduationCap} className="text-5xl xl:text-7xl 2xl:text-8xl" />
                     </div>
                     <div className="flex flex-col mb-8 xl:mb-16 2xl:mb-24 justify-center items-center xl:gap-3 2xl:gap-4">
-                        <p className="font-semibold xl:text-3xl 2xl:text-4xl xl:pt-16 2xl:pt-24">Bachelor of Technology (Computer Science Engineering)</p>
+                        <p className="font-semibold xl:text-3xl 2xl:text-4xl xl:pt-16 2xl:pt-24 mt-8">Bachelor of Technology (Computer Science Engineering)</p>
                         <p className="xl:text-3xl 2xl:text-4xl">Maharaja Agrasen Institute of Technology [2023-2027]</p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ export default function About() {
                 </Link>
                 <span className="hidden md:block lg:hidden mt-4">*Terminal version available on desktop</span>
             </div>
-            <div className="hidden lg:block md:w-1/2">
+            <div className="hidden lg:block md:w-1/2 mt-28">
                 <Terminal />
             </div>
         </div>
