@@ -2,6 +2,7 @@ import { Link } from 'react-router';
 import featured from '../../assets/data/projects';
 
 export default function Projects() {
+  
   return (
     <div className="mt-16 md:mt-20 flex flex-col fade-in-section justify-center bg-black text-lightBeige px-4 md:px-16 lg:px-20 lg:py-8 xl:px-32 xl:py-12 2xl:px-48 2xl:py-16 xl:mt-20">
       {/* Header Section */}

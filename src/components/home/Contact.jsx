@@ -72,6 +72,7 @@ export default function Contact() {
       setLoading(false);
     }
   };
+  
 
   return (
     <section className="relative mx-8 lg:h-[calc(100vh-5rem)] xl:h-[calc(90vh-5rem)] 2xl:h-[calc(80vh-5rem)] mt-16 md:mt-0 flex flex-col lg:flex-row justify-between items-center fade-in-section bg-black text-lightBeige xl:gap-12 2xl:gap-16 xl:mx-32 2xl:mx-64">

@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import Terminal from './Terminal'
 
 export default function About() {
+    
     return (
         <div className="relative md:h-[calc(100vh-2.5rem)] flex justify-between items-center fade-in-section bg-black text-lightBeige">
             <div className="w-full lg:w-1/2 ml-4 mr-4 md:ml-20 md:mr-20 lg:mr-4 xl:mx-32 2xl:mx-64 md:h-[66vh]">

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import '@fontsource/italianno';
 @import "tailwindcss";
 @theme{
+    --font-italianno: Italianno, cursive;
     --font-inter: Inter, sans-serif;
     --font-bebas: Bebas Neue, Inter, sans-serif;
     --color-headerBeige:rgb(245,245,245);
@@ -59,4 +61,22 @@
 .fade-in {
   opacity: 0;
   animation: fadeIn 0.6s ease-out forwards;
+}
+
+.about-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.about-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.about-fade-in-hero {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.about-fade-in-hero.visible {
+  opacity: 1;
 }
