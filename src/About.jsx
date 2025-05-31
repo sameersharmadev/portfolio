@@ -6,7 +6,7 @@ import About3 from './assets/img/about_3.webp';
 
 function About() {
   const sectionsRef = useRef([]);
-
+  const scrollRef = useRef(null);
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -34,9 +34,9 @@ function About() {
 
   return (
     <>
-      <AboutHero />
+      <AboutHero nextSectionRef={scrollRef}/>
       
-      <div className="flex flex-col p-6 max-w-5/6 mx-auto text-lightBeige">
+      <div ref={scrollRef} className="flex flex-col p-6 max-w-5/6 mx-auto text-lightBeige">
         <div
           ref={(el) => (sectionsRef.current[0] = el)}
           className="about-fade-in flex flex-col md:flex-row lg:items-center justify-center gap-6 mt-16 md:mt-24 lg:mt-28 md:gap-4 lg:gap-12 mx-auto xl:mt-24 2xl:mt-48"

@@ -80,3 +80,31 @@
 .about-fade-in-hero.visible {
   opacity: 1;
 }
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  background-color: transparent !important;
+  color: var(--color-lightBeige) !important; 
+  -webkit-text-fill-color: var(--color-lightBeige) !important; 
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  transition: background-color 5000s ease-in-out 0s; 
+}
+.fade-in-contact {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-contact.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-in-projects {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-projects.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

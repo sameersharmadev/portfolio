@@ -9,11 +9,13 @@ import About from './About.jsx'
 import './style.css'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
       <Header/>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<App/>}/>
         <Route path="/about" element={<About/>}/>
