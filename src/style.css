@@ -14,6 +14,13 @@
     --breakpoint-xl:150rem;
     --breakpoint-2xl:200rem;
 }
+@font-face {
+  font-family: 'Italianno';
+  src: url('/fonts/italianno.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 .fade-in-hero {
   opacity: 0;
