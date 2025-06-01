@@ -45,7 +45,7 @@ export default function Hero({ nextSectionRef }) {
           <img
             src={heroimg}
             alt="Contact Hero"
-            className="h-60 lg:h-100 xl:h-[48rem] 2xl:h-[70rem]"
+            className="h-50 lg:h-80 xl:h-[36rem] 2xl:h-[50rem]"
           />
         </div>
 
