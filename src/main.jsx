@@ -2,6 +2,7 @@ import { StrictMode , useEffect} from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router,Routes,Route} from "react-router";
 import '@fontsource/inter';
+import '@fontsource/italianno/400.css';
 import App from './App.jsx'
 import Contact from './Contact.jsx'
 import Projects from './Projects.jsx'
