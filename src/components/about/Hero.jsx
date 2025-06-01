@@ -36,13 +36,22 @@ export default function AboutHero({ nextSectionRef }) {
       ref={heroRef}
       className="relative h-[calc(100vh-2.5rem)] flex justify-center items-center bg-lightBeige about-fade-in-hero"
     >
-      <div className="flex flex-col w-5/6 lg:flex-row gap-8 lg:gap-12 lg:px-0 items-center md:items-start xl:gap-16 2xl:gap-32 justify-center mx-auto lg:items-center justify-center w-5/6">
-        <div className="lg:m-0 md:px-16">
-          <img src={heroimg} alt="hero image" className="shadow-lg h-72 lg:h-128 xl:h-[60rem] 2xl:h-[80rem]" />
+      <div className="flex flex-col lg:flex-row items-center justify-center w-5/6 gap-4 lg:gap-6 xl:gap-8 2xl:gap-10">
+        {/* Image Section */}
+        <div className="w-full lg:w-1/2 flex justify-center">
+          <img
+            src={heroimg}
+            alt="hero image"
+            className="shadow-lg h-72 lg:h-128 xl:h-[60rem] 2xl:h-[80rem]"
+          />
         </div>
-        <div className="flex flex-col gap-4 px-8 md:px-16 lg:px-0 xl:px-8 2xl:px-16 lg:w-5/12 xl:gap-12 2xl:gap-20">
+
+        {/* Text Section */}
+        <div className="w-full lg:w-1/2 flex flex-col gap-4 xl:gap-8 2xl:gap-12 text-center lg:text-left">
           <h1 className="text-2xl md:text-5xl lg:text-6xl xl:text-8xl 2xl:text-[9rem]">More about me...</h1>
-          <h2 className="text-2xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-9xl font-italianno">Design . Build . Solve</h2>
+          <h2 className="text-2xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-9xl font-italianno">
+            Design . Build . Solve
+          </h2>
           <p className="text-base md:text-lg xl:text-3xl 2xl:text-5xl 2xl:leading-relaxed">
             For me, its not just a job, it’s a way of thinking. <br />
             It’s how I choose to bring structure to my ideas, and solve problems.
@@ -50,7 +59,7 @@ export default function AboutHero({ nextSectionRef }) {
           </p>
           <button
             onClick={scrollToNextSection}
-            className="w-full text-center text-lg lg:text-xl xl:text-3xl 2xl:text-4xl bg-black text-lightBeige p-2 lg:p-3 xl:p-5 2xl:p-6 mb-2 lg:mb-4 xl:mb-6 2xl:mb-8 hover:bg-blackHover transition"
+            className="w-full text-center text-lg lg:text-xl xl:text-3xl 2xl:text-4xl bg-black text-lightBeige p-2 lg:p-3 xl:p-5 2xl:p-6 hover:bg-blackHover transition"
           >
             Get to know me
           </button>

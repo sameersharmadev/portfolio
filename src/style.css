@@ -14,6 +14,7 @@
     --breakpoint-xl:150rem;
     --breakpoint-2xl:200rem;
 }
+
 .fade-in-hero {
   opacity: 0;
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;

@@ -38,11 +38,11 @@ function Projects() {
         ref={(el) => {
           sectionsRef.current[0] = el; 
         }}
-        className="fade-in-projects"
+        className="fade-in-projects mb-8 md:mb-12 lg:mb-20 xl:mb-32 2xl:mb-40"
       >
         <div ref={scrollRef} className="pt-16 md:pt-20 flex flex-col justify-center bg-black text-lightBeige px-4 md:px-16 lg:px-20 lg:py-8 xl:px-32 xl:py-12 2xl:px-48 2xl:py-16 xl:pt-20">
           {/* Projects Section */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-8xl font-semibold my-4 md:my-8 lg:my-8 xl:my-12 2xl:my-16">Featured work</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-8xl font-semibold my-4 md:my-8 lg:my-8 xl:my-12 2xl:my-16">Featured projects</h2>
           <div className="flex flex-col lg:flex-row gap-8 xl:gap-12 2xl:gap-16">
             
             {featured.map((elt, index) => (

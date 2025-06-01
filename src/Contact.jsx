@@ -66,7 +66,7 @@ export default function Contact() {
     setLoading(true);
     setStatus('');
     try {
-      const res = await fetch('http://localhost:3000/send/', {
+      const res = await fetch('/api/send/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ export default function Contact() {
       }
     } catch (error) {
       console.error(error);
-      setStatus('Server error: ', error);
+      setStatus(`Server error: : ${error.message}`);
     } finally {
       setLoading(false);
     }
