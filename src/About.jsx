@@ -41,7 +41,7 @@ function About() {
           ref={(el) => (sectionsRef.current[0] = el)}
           className="about-fade-in flex flex-col md:flex-row lg:items-center justify-center gap-6 mt-16 md:mt-24 lg:mt-28 md:gap-4 lg:gap-12 mx-auto xl:mt-24 2xl:mt-48"
         >
-          <img src={About1} alt="Picture of Sameer" className=" w-32 md:w-48 lg:w-52 xl:w-72 2xl:w-96 rounded shadow-lg" />
+          <img src={About1} loading="lazy" alt="Picture of Sameer" className=" w-32 md:w-48 lg:w-52 xl:w-72 2xl:w-96 rounded shadow-lg" />
           <p className="text-sm lg:text-lg xl:text-3xl 2xl:text-4xl 2xl:leading-relaxed lg:w-7/12">
             My first introduction to programming was in my school, when I just decided to pick a book about programming in Python from my library out of curiosity.
             <br />
@@ -55,7 +55,7 @@ function About() {
           ref={(el) => (sectionsRef.current[1] = el)}
           className="about-fade-in flex flex-col md:flex-row-reverse lg:items-center justify-center gap-6 mt-16 md:mt-24 lg:mt-28 md:gap-4 lg:gap-12 mx-auto"
         >
-          <img src={About2} alt="Picture of window with rain" className="w-32 md:w-48 lg:w-52 xl:w-72 2xl:w-96 rounded shadow-lg" />
+          <img loading="lazy" src={About2} alt="Picture of window with rain" className="w-32 md:w-48 lg:w-52 xl:w-72 2xl:w-96 rounded shadow-lg" />
           <p className="text-sm lg:text-lg xl:text-3xl 2xl:text-4xl 2xl:leading-relaxed lg:w-7/12">
             As I dove deeper into it, I realised how little it was about specific tech stacks, and what mattered more is the system design. I believe a good application should respect the user. It should be intuitive, never making people think more than they need to.
             <br />
@@ -69,7 +69,7 @@ function About() {
           ref={(el) => (sectionsRef.current[2] = el)}
           className="about-fade-in flex flex-col md:flex-row lg:items-center justify-center gap-6 mt-16 md:mt-24 lg:mt-28 md:gap-4 lg:gap-12 mx-auto mb-16 xl:mb-24 2xl:mb-48"
         >
-          <img src={About3} alt="Picture of street taken at night" className="w-32 md:w-48 lg:w-52 xl:w-72 2xl:w-96 rounded shadow-lg" />
+          <img loading="lazy" src={About3} alt="Picture of street taken at night" className="w-32 md:w-48 lg:w-52 xl:w-72 2xl:w-96 rounded shadow-lg" />
           <p className="text-sm lg:text-lg xl:text-3xl 2xl:text-4xl 2xl:leading-relaxed lg:w-7/12">
             Enough with the philosophy, but that’s exactly how I see programming. Just something I started as a pure curiosity and instantly fell in love with.
             <br />
