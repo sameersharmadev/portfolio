@@ -1,8 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import heroimg from '../../assets/img/contact_hero.webp';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function Hero({ nextSectionRef }) {
   const heroRef = useRef(null);
@@ -56,28 +53,14 @@ export default function Hero({ nextSectionRef }) {
             Whether you have a project in mind, a question, or just want to say hello — I’m always open to discussing new ideas, opportunities, or collaborations. Drop me a message and I’ll get back to you as soon as possible.
           </p>
 
-          {/* Social Icons */}
-          <div className="flex justify-center lg:justify-start gap-4 xl:gap-6 text-gray-500 text-xl xl:text-3xl 2xl:text-4xl">
-            <a href="https://github.com/sameersharmadev" target="_blank" rel="noopener noreferrer" className="hover:text-blackHover transition">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a href="https://www.linkedin.com/in/sameersharma777/" target="_blank" rel="noopener noreferrer" className="hover:text-blackHover transition">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a href="https://x.com/Sameersharma_77" target="_blank" rel="noopener noreferrer" className="hover:text-blackHover transition">
-              <FontAwesomeIcon icon={faXTwitter} />
-            </a>
-            <a href="mailto:sameersh571@gmail.com" className="hover:text-blackHover transition">
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-          </div>
+
 
           {/* CTA Button */}
           <button
             onClick={scrollToNextSection}
             className="w-full text-center text-lg lg:text-xl xl:text-3xl 2xl:text-4xl bg-black text-lightBeige p-2 lg:p-3 xl:p-5 2xl:p-6 hover:bg-blackHover transition"
           >
-            Contact Now
+            Send a messaage
           </button>
         </div>
       </div>

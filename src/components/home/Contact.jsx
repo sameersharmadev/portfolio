@@ -61,7 +61,7 @@ export default function Contact() {
         <div className="w-10/12 lg:w-3/4 md:w-10/12 mb-12 flex justify-center lg:justify-start">
           <button
             onClick={() => (window.location.href = "/contact")}
-            className="hover:bg-[#303e44] group min-w-[160px] flex justify-center bg-headerBeige text-black border border-white/20 py-3 px-4 text-sm font-medium text-center hover:text-white rounded-lg sm:w-fit lg:text-lg xl:text-3xl 2xl:text-4xl xl:p-6 2xl:p-8"
+            className="group min-w-[160px] flex justify-center bg-headerBeige text-black border border-white/20 py-3 px-4 text-sm font-medium text-center rounded-lg sm:w-fit lg:text-lg xl:text-3xl 2xl:text-4xl xl:p-6 2xl:p-8"
           >
             Go to contact form
           </button>

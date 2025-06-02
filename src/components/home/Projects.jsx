@@ -1,15 +1,17 @@
 import { Link } from 'react-router';
 import featured from '../../assets/data/projects';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faArrowRight } from '@fortawesome/free-solid-svg-icons'
 export default function Projects() {
   
   return (
     <div className="mt-16 md:mt-20 flex flex-col fade-in-section justify-center bg-black text-lightBeige px-4 md:px-16 lg:px-20 lg:py-8 xl:px-32 xl:py-12 2xl:px-48 2xl:py-16 xl:mt-20">
       {/* Header Section */}
-      <div className="flex flex-row justify-between items-center mb-8 xl:mb-16 2xl:mb-32">
+      <div className="flex flex-row justify-between items-end mb-8 xl:mb-16 2xl:mb-32">
         <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-8xl font-semibold">Featured work</h2>
-        <Link to="/projects" className="text-sm lg:text-lg xl:text-2xl 2xl:text-4xl">
+        <Link to="/projects" className="px-2 flex items-center text-sm lg:text-lg xl:text-2xl 2xl:text-4xl">
           View all projects
+          <FontAwesomeIcon className="pl-2" icon={faArrowRight} />
         </Link>
       </div>
 

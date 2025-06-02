@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
+import { faGraduationCap, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router'
 import Terminal from './Terminal'
 
@@ -51,8 +51,9 @@ export default function About() {
                         <p className="xl:text-3xl 2xl:text-4xl">Maharaja Agrasen Institute of Technology [2023-2027]</p>
                     </div>
                 </div>
-                <Link to="/about" className="block w-full rounded text-center md:text-xl xl:text-3xl 2xl:text-4xl bg-lightBeige text-black p-1 xl:p-3 2xl:p-4">
-                    View more
+                <Link to="/about" className="flex items-center xl:text-3xl 2xl:text-4xl">
+                    View more about my journey, philosophy, etc.
+                    <FontAwesomeIcon className="pl-2" icon={faArrowRight} />
                 </Link>
                 <span className="hidden md:block lg:hidden mt-4">*Terminal version available on desktop</span>
             </div>

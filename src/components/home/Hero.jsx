@@ -46,10 +46,10 @@ export default function Hero(){
             </div>
           </div>
 
-          <Link to="/projects" className="lg:w-10/12 text-center text-lg lg:text-xl xl:text-3xl 2xl:text-4xl bg-black text-lightBeige p-2 lg:p-3 xl:p-5 2xl:p-6 mb-2 lg:mb-4 xl:mb-6 2xl:mb-8 hover:bg-blackHover transition">
+          <Link to="/projects" className="cursor-default lg:w-10/12 text-center text-lg lg:text-xl xl:text-3xl 2xl:text-4xl bg-black text-lightBeige p-2 lg:p-3 xl:p-5 2xl:p-6 mb-2 lg:mb-4 xl:mb-6 2xl:mb-8 hover:bg-blackHover transition">
             View my work
           </Link>
-          <Link to="/contact" className="mb-16 md:mb-0 lg:w-10/12 text-lg lg:text-xl xl:text-3xl 2xl:text-4xl text-center transition">
+          <Link to="/contact" className="cursor-default mb-16 md:mb-0 lg:w-10/12 text-lg lg:text-xl xl:text-3xl 2xl:text-4xl text-center transition">
             Contact me
           </Link>
         </div>
