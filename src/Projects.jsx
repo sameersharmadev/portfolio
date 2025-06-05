@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react';
 import Hero from './components/projects/Hero';
 import featured from './assets/data/projects';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 function Projects() {
   const sectionsRef = useRef([]);
@@ -85,13 +87,13 @@ function Projects() {
                   {/* Buttons */}
                   <div className="flex gap-4 xl:gap-6 2xl:gap-8 mt-4 xl:mt-6 2xl:mt-8">
                     <button
-                      className="text-black text-sm lg:text-base bg-lightBeige p-2 px-4 md:p-2 md:px-3 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl"
+                      className="text-black text-sm lg:text-base bg-lightBeige p-2 px-4 md:p-2 md:px-3 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl hidden"
                       onClick={() => window.open(elt.website, '_blank')}
                     >
                       View
                     </button>
                     <button
-                      className="text-lightBeige text-sm lg:text-base bg-transparent p-2 px-4 md:p-2 md:pl-3 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl"
+                      className="text-black text-sm lg:text-base bg-lightBeige p-2 px-4 md:p-2 md:pl-3 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl"
                       onClick={() => window.open(elt.website, '_blank')}
                     >
                       Website
@@ -100,7 +102,7 @@ function Projects() {
                       className="text-lightBeige text-sm lg:text-base bg-transparent p-2 px-4 md:p-2 md:pl-3 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl"
                       onClick={() => window.open(elt.source, '_blank')}
                     >
-                      Repository
+                      Github <FontAwesomeIcon className="pl-1" icon={faArrowUpRightFromSquare} />
                     </button>
                   </div>
 

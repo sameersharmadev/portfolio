@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
 import featured from '../../assets/data/projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import {faArrowRight,faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 export default function Projects() {
   
   return (
@@ -57,13 +57,13 @@ export default function Projects() {
                 {/* Buttons */}
                 <div className="flex gap-4 xl:gap-6 2xl:gap-8 mt-4 xl:mt-6 2xl:mt-8">
                   <button
-                    className="text-black text-sm lg:text-base bg-lightBeige p-2 px-4 md:p-2 md:px-3 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl"
+                    className="text-black text-sm lg:text-base bg-lightBeige p-2 px-4 md:p-2 md:px-3 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl hidden"
                     onClick={() => window.open(elt.website, '_blank')}
                   >
                     View
                   </button>
                   <button
-                    className="text-lightBeige text-sm lg:text-base bg-transparent p-2 px-4 md:p-2 md:pl-3 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl"
+                    className="text-black text-sm lg:text-base bg-lightBeige p-2 px-4 md:p-2 md:pl-3 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl"
                     onClick={() => window.open(elt.website, '_blank')}
                   >
                     Website
@@ -72,7 +72,7 @@ export default function Projects() {
                     className="text-lightBeige text-sm lg:text-base bg-transparent p-2 px-4 md:p-2 md:pl-3 xl:p-4 xl:px-8 2xl:p-6 2xl:px-12 text-sm md:text-base xl:text-xl 2xl:text-3xl"
                     onClick={() => window.open(elt.source, '_blank')}
                   >
-                    Repository
+                    Github <FontAwesomeIcon className="pl-1" icon={faArrowUpRightFromSquare} />
                   </button>
                 </div>
 

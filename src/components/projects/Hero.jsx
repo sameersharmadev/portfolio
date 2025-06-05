@@ -52,7 +52,7 @@ export default function Hero({ nextSectionRef }) {
           <p className="text-base md:text-lg xl:text-3xl 2xl:text-5xl 2xl:leading-relaxed">
             Here are some things I’ve created, with care, thought and love.
             Every project on this page is a step in my journey of learning.
-            Some started as late-night curiosities, others as structured challenges,
+            Some started as shower thoughts, others as structured challenges,
             but all taught me something valuable.
             <br />
             <br />

@@ -152,7 +152,7 @@ export default function Terminal() {
   return (
     <div
       ref={containerRef}
-      className="w-10/12 xl:w-11/12 2xl:w-11/12 mx-auto rounded-lg shadow-lg font-mono text-green-500 overflow-y-auto flex flex-col h-[66vh] xl:h-[72vh] 2xl:h-[60vh] fade-in-section md:mr-20 xl:mr-32 2xl:mr-48 xl:text-3xl 2xl:text-4xl xl:leading-relaxed 2xl:leading-loose xl:mt-32 2xl:-mt-32"
+      className="w-10/12 xl:w-11/12 2xl:w-11/12 mx-auto rounded-lg shadow-lg font-mono text-green-500 overflow-y-auto flex flex-col h-[66vh] xl:h-[72vh] 2xl:h-[60vh] fade-in-section md:mr-20 xl:mr-32 2xl:mr-48 xl:text-3xl 2xl:text-4xl xl:leading-relaxed 2xl:leading-loose"
       onClick={() => {
         if (!destroyed && containerRef.current?.classList.contains("visible")) {
           inputRef.current?.focus({ preventScroll: true });

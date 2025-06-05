@@ -37,15 +37,7 @@ export default function Header() {
           ))}
         </div>
 
-        {/* Branding */}
-        <div className="gap-4 flex items-center pt-1">
-          <Link
-            to="/"
-            className="text-xl md:text-3xl xl:text-5xl 2xl:text-6xl tracking-wider text-black uppercase select-none cursor-default px-4 xl:px-10 2xl:px-12 font-bebas"
-          >
-            {"< Sameer Sharma />"}
-          </Link>
-        </div>
+        
 
         {/* Menu */}
         <div className="md:hidden px-4 xl:px-6 2xl:px-8" onClick={toggleMenu}>

@@ -3,6 +3,7 @@ import AboutHero from './components/about/Hero';
 import About1 from './assets/img/about_1.webp';
 import About2 from './assets/img/about_2.webp';
 import About3 from './assets/img/about_3.webp';
+import About4 from './assets/img/about_4.webp';
 
 function About() {
   const sectionsRef = useRef([]);
@@ -57,7 +58,7 @@ function About() {
         >
           <img loading="lazy" src={About2} alt="Picture of window with rain" className="w-32 md:w-48 lg:w-52 xl:w-72 2xl:w-96 rounded shadow-lg" />
           <p className="text-sm lg:text-lg xl:text-3xl 2xl:text-4xl 2xl:leading-relaxed lg:w-7/12">
-            As I dove deeper into it, I realised how little it was about specific tech stacks, and what mattered more is the system design. I believe a good application should respect the user. It should be intuitive, never making people think more than they need to.
+            As I dove deeper into it, I realised how it goes well beyond just learning a tech stack. I believe a good application should respect the user. It should be intuitive, never making people think more than they need to.
             <br />
             There’s something satisfying about designing something so intuitive, that people don’t even notice how much thought went into it, because it just works. 
             And that was my goal: to build something that feels natural, as if it was meant to work that way.
@@ -69,7 +70,7 @@ function About() {
           ref={(el) => (sectionsRef.current[2] = el)}
           className="about-fade-in flex flex-col md:flex-row lg:items-center justify-center gap-6 mt-16 md:mt-24 lg:mt-28 md:gap-4 lg:gap-12 mx-auto mb-16 xl:mb-24 2xl:mb-48"
         >
-          <img loading="lazy" src={About3} alt="Picture of street taken at night" className="w-32 md:w-48 lg:w-52 xl:w-72 2xl:w-96 rounded shadow-lg" />
+          <img loading="lazy" src={About3} alt="Picture of clouds from the sky" className="w-32 md:w-48 lg:w-52 xl:w-72 2xl:w-96 rounded shadow-lg" />
           <p className="text-sm lg:text-lg xl:text-3xl 2xl:text-4xl 2xl:leading-relaxed lg:w-7/12">
             Enough with the philosophy, but that’s exactly how I see programming. Just something I started as a pure curiosity and instantly fell in love with.
             <br />
@@ -80,6 +81,7 @@ function About() {
             If you share the same passion as me, or have any exciting challenge or opportunity, feel free to connect through my socials or the contact form. I’m open for collaboration, freelancing, or just talk.
           </p>
         </div>
+       
       </div>
     </>
   );

@@ -89,7 +89,7 @@ export default function Contact() {
       }
     } catch (error) {
       console.error(error);
-      setStatus(`Server error: : ${error.message}`);
+      setStatus(`Server error: ${error.message}`);
     } finally {
       setLoading(false);
     }

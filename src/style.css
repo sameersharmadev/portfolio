@@ -96,16 +96,7 @@ textarea:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
   transition: background-color 5000s ease-in-out 0s; 
 }
-.fade-in-contact {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
 
-.fade-in-contact.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 .fade-in-projects {
   opacity: 0;
   transform: translateY(20px);
@@ -113,6 +104,16 @@ textarea:-webkit-autofill {
 }
 
 .fade-in-projects.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-in-contact {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-contact.visible {
   opacity: 1;
   transform: translateY(0);
 }

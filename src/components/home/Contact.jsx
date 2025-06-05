@@ -97,7 +97,7 @@ export default function Contact() {
           </li>
           <li className="flex items-start gap-2">
             <span className="text-red-500">🕵️‍♂️</span>
-            <span><strong>Just Curious?</strong> No pressure — drop a message about anything!</span>
+            <span><strong>Just Curious?</strong> No pressure, drop a message about anything!</span>
           </li>
           <li className="flex items-start gap-2 mt-16">
             <span className="text-green-400">🟢</span>
