@@ -27,7 +27,7 @@ export default function Contact() {
     setLoading(true);
     setStatus('');
     setResultIcon(null);
-  
+
     try {
       const res = await fetch('/api/send/', {
         method: 'POST',
@@ -36,9 +36,9 @@ export default function Contact() {
         },
         body: JSON.stringify({ email, subject, message }),
       });
-  
+
       const data = await res.json();
-  
+
       if (res.ok && !data.error) {
         setResultIcon('success');
         setEmail('');
@@ -60,7 +60,7 @@ export default function Contact() {
       setLoading(false);
     }
   };
-  
+
 
   useEffect(() => {
     const now = new Date();
@@ -160,10 +160,11 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className="absolute bottom-6 right-3 bg-[#303e44] text-white w-10 h-10 rounded-full hover:bg-headerBeige hover:text-black transition-all"
+                className={`absolute bottom-6 right-3 rounded-full w-10 h-10 transition-all flex items-center justify-center 
+    ${loading ? 'bg-gray-500 cursor-not-allowed' : 'bg-[#303e44] hover:bg-headerBeige hover:text-black text-white'}`}
               >
                 {loading ? (
-                  <FontAwesomeIcon icon={faPaperPlane} className="animate-spin" />
+                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
                 ) : resultIcon === 'success' ? (
                   <FontAwesomeIcon icon={faCheck} />
                 ) : resultIcon === 'error' ? (
@@ -172,6 +173,7 @@ export default function Contact() {
                   <FontAwesomeIcon icon={faPaperPlane} />
                 )}
               </button>
+
             </div>
 
             {resultIcon === 'error' && status && (
