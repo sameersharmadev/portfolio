@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faFile } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
 const navLinks = [
@@ -35,9 +35,18 @@ export default function Header() {
           ))}
         </div>
 
-        {/* Menu Toggle */}
-        <div className="md:hidden px-4 xl:px-6 2xl:px-8" onClick={toggleMenu}>
-          <FontAwesomeIcon icon={faBars} size="lg" className="text-xl xl:text-2xl 2xl:text-3xl" />
+        {/* Download Resume & Menu Toggle */}
+        <div className="flex items-center gap-4 xl:gap-6">
+          {/* Simple Download Resume Link */}
+          <a href="/resume.pdf" download className="hidden md:flex items-center gap-1 text-sm md:text-base xl:text-xl 2xl:text-2xl mr-6">
+            <FontAwesomeIcon icon={faFile} />
+            Download Resume
+          </a>
+
+          {/* Mobile Menu Icon */}
+          <div className="md:hidden px-4 xl:px-6 2xl:px-8" onClick={toggleMenu}>
+            <FontAwesomeIcon icon={faBars} size="lg" className="text-xl xl:text-2xl 2xl:text-3xl" />
+          </div>
         </div>
       </div>
 
@@ -57,6 +66,15 @@ export default function Header() {
               {label}
             </NavLink>
           ))}
+          <a
+            href="/resume.pdf"
+            download
+            className="p-2 px-6 xl:px-8 2xl:px-10 text-sm md:text-lg xl:text-2xl 2xl:text-3xl"
+            onClick={() => setMenuToggle(false)}
+          >
+            <FontAwesomeIcon icon={faFile} className="mr-2" />
+            Download Resume
+          </a>
         </div>
       )}
     </>

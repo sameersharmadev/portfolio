@@ -216,31 +216,40 @@ export default function Contact() {
           </ul>
 
           <div className="flex flex-wrap gap-3 mt-8">
-            <a href="https://github.com/sameersharmadev" target="_blank" rel="noopener noreferrer" className="flex h-8 md:h-10 w-fit">
-              <div className="bg-[#4b5567] w-8 md:w-10 flex items-center justify-center">
-                <FontAwesomeIcon icon={faGithub} className="text-white text-sm md:text-base" />
+            <a href="https://github.com/sameersharmadev" target="_blank" rel="noopener noreferrer"
+              className="flex h-8 md:h-10 w-fit items-center overflow-hidden bg-[#3b4452] text-white text-xs md:text-sm rounded-md hover:bg-[#4b5567] transition-colors">
+              <div className="w-8 md:w-10 flex items-center justify-center bg-[#4b5567] h-full">
+                <FontAwesomeIcon icon={faGithub} className="text-white text-sm md:text-lg" />
               </div>
-              <div className="bg-[#3b4452] text-white text-xs md:text-sm flex items-center px-3">GitHub</div>
+              <span className="px-3">GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/sameersharma777/" target="_blank" rel="noopener noreferrer" className="flex h-8 md:h-10 w-fit">
-              <div className="bg-[#4b5567] w-8 md:w-10 flex items-center justify-center">
-                <FontAwesomeIcon icon={faLinkedin} className="text-white text-sm md:text-base" />
+
+            <a href="https://www.linkedin.com/in/sameersharma777/" target="_blank" rel="noopener noreferrer"
+              className="flex h-8 md:h-10 w-fit items-center overflow-hidden bg-[#3b4452] text-white text-xs md:text-sm rounded-md hover:bg-[#4b5567] transition-colors">
+              <div className="w-8 md:w-10 flex items-center justify-center bg-[#4b5567] h-full">
+                <FontAwesomeIcon icon={faLinkedin} className="text-white text-sm md:text-lg" />
               </div>
-              <div className="bg-[#3b4452] text-white text-xs md:text-sm flex items-center px-3">LinkedIn</div>
+              <span className="px-3">LinkedIn</span>
             </a>
-            <a href="https://x.com/Sameersharma_77" target="_blank" rel="noopener noreferrer" className="flex h-8 md:h-10 w-fit">
-              <div className="bg-[#4b5567] w-8 md:w-10 flex items-center justify-center">
-                <FontAwesomeIcon icon={faXTwitter} className="text-white text-sm md:text-base" />
+
+            <a href="https://x.com/Sameersharma_77" target="_blank" rel="noopener noreferrer"
+              className="flex h-8 md:h-10 w-fit items-center overflow-hidden bg-[#3b4452] text-white text-xs md:text-sm rounded-md hover:bg-[#4b5567] transition-colors">
+              <div className="w-8 md:w-10 flex items-center justify-center bg-[#4b5567] h-full">
+                <FontAwesomeIcon icon={faXTwitter} className="text-white text-sm md:text-lg" />
               </div>
-              <div className="bg-[#3b4452] text-white text-xs md:text-sm flex items-center px-3">Twitter</div>
+              <span className="px-3">Twitter</span>
             </a>
-            <a href="mailto:sameersh571@gmail.com" className="flex h-8 md:h-10 w-fit">
-              <div className="bg-[#4b5567] w-8 md:w-10 flex items-center justify-center">
-                <FontAwesomeIcon icon={faEnvelope} className="text-white text-sm md:text-base" />
+
+            <a href="mailto:sameersh571@gmail.com"
+              className="flex h-8 md:h-10 w-fit items-center overflow-hidden bg-[#3b4452] text-white text-xs md:text-sm rounded-md hover:bg-[#4b5567] transition-colors">
+              <div className="w-8 md:w-10 flex items-center justify-center bg-[#4b5567] h-full">
+                <FontAwesomeIcon icon={faEnvelope} className="text-white text-sm md:text-lg" />
               </div>
-              <div className="bg-[#3b4452] text-white text-xs md:text-sm flex items-center px-3">Email</div>
+              <span className="px-3">Email</span>
             </a>
           </div>
+
+
         </div>
       </div>
     </section>
