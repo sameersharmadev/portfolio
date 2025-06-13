@@ -17,7 +17,7 @@ export default function Hero(){
     <div className="relative md:h-[calc(100vh-2.5rem)] flex justify-center items-center bg-lightBeige fade-in-hero ">
       <div className="flex flex-col lg:flex-row gap-8 xl:gap-16 2xl:gap-32 items-center justify-center w-5/6">
         <div className="mt-8 lg:w-5/12 lg:m-0 flex justify-center lg:justify-end">
-          <img src={heroimg} alt="hero image" className="h-72 lg:h-128 xl:h-[60rem] 2xl:h-[80rem]" />
+          <img src={heroimg} alt="hero image" className="h-72 lg:h-128 xl:h-[60rem] 2xl:h-[80rem] mx-8" />
         </div>
         <div className="lg:w-7/12 justify-center flex flex-col px-8 lg:px-0 xl:px-8 2xl:px-16">
           <p className="-mt-4 text-xl lg:text-2xl xl:text-5xl 2xl:text-7xl xl:mb-2 2xl:mb-2">Hello there! I am</p>

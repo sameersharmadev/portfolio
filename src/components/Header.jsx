@@ -1,4 +1,4 @@
-import { NavLink, Link } from 'react-router';
+import { NavLink } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
@@ -7,7 +7,6 @@ const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/projects", label: "Projects" },
-  { to: "/contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -16,7 +15,6 @@ export default function Header() {
   function toggleMenu() {
     setMenuToggle((prev) => !prev);
   }
-  
 
   return (
     <>
@@ -37,14 +35,13 @@ export default function Header() {
           ))}
         </div>
 
-        
-
-        {/* Menu */}
+        {/* Menu Toggle */}
         <div className="md:hidden px-4 xl:px-6 2xl:px-8" onClick={toggleMenu}>
           <FontAwesomeIcon icon={faBars} size="lg" className="text-xl xl:text-2xl 2xl:text-3xl" />
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {menuToggle && (
         <div className="fixed w-full bg-lightBeige flex flex-col gap-2 xl:gap-4 2xl:gap-6 shadow-md z-50">
           {navLinks.map(({ to, label }) => (
