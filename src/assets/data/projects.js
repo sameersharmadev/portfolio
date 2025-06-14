@@ -9,7 +9,7 @@ const featured = [
         img: fitFocus,
         desc: "FitFocus is a web app that delivers personalized diet plans and nutrition advice via email.",
         stack: ["HTML", "CSS", "Javascript"],
-        website: "https://sameersharmadev.github.io/fitfocus/",
+        website: "https:fitfocus.sameersharma.me/",
         source: "https://github.com/sameersharmadev/fitfocus"
     },
     {
@@ -18,7 +18,7 @@ const featured = [
         img: opulence,
         desc: "Opulence is a restaurant app for viewing the menu and making online table reservations.",
         stack: ["HTML", "CSS", "Javascript"],
-        website: "https://sameersharmadev.github.io/opulence/",
+        website: "https:opulence.sameersharma.me/",
         source: "https://github.com/sameersharmadev/opulence"
     },
     {
@@ -27,7 +27,7 @@ const featured = [
         img: speedmaster,
         desc: "Speedmaster is a product landing page for a classic watch, highlighting its legacy.",
         stack: ["HTML", "CSS", "Javascript"],
-        website: "https://sameersharmadev.github.io/speedmaster/",
+        website: "https:speedmaster.sameersharma.me/",
         source: "https://github.com/sameersharmadev/speedmaster"
     }
 ]
