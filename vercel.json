@@ -3,16 +3,8 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/fitfocus",
-      "destination": "/fitfocus/index.html"
-    },
-    {
-      "source": "/opulence",
-      "destination": "/opulence/index.html"
-    },
-    {
-      "source": "/speedmaster",
-      "destination": "/speedmaster/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
