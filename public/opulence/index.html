@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="./style/output.css" rel="stylesheet">
+    <title>Opulence</title>
+</head>
+<body class="bg-beige">
+
+    <!--NAVBAR-->
+    <nav class="flex justify-between items-center p-4 bg-transparent md:px-8">
+        <a href="./index.html" class="navbar-brand md:text-4xl text-beige">
+            Opulence
+        </a>
+        <div class="hidden md:flex space-x-6 text-lg">
+            <a href="./about.html" class="text-beige hover:text-white transition duration-300">About</a>
+            <a href="./menu.html" class="text-beige hover:text-white transition duration-300">Menu</a>
+            <a href="#" class="text-beige hover:text-white transition duration-300 booking">Reserve</a>
+            <a href="#" class="text-beige hover:text-white transition duration-300 contact">Contact</a>
+        </div>
+        <div class="md:hidden">
+            <button id="hamburger" class="text-beige focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <!--Mobile Navbar-->
+    <div id="mobile-menu" class="md:hidden absolute top-1 left-0 right-0 bg-black hidden z-10">
+        <div class="flex flex-col items-center pb-6 space-y-4">
+            <button id="close-button" class="absolute top-4 right-4 text-beige">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <p class="text-center text-beige text-2xl font-playfair">-Opulence-</p>
+            <a href="./about.html" class="text-beige hover:text-white transition duration-300 text-sm">About</a>
+            <a href="./menu.html" class="text-beige hover:text-white transition duration-300 text-sm">Menu</a>
+            <a href="#" class="text-beige hover:text-white transition duration-300 text-sm">Reserve</a>
+            <a href="#" class="text-beige hover:text-white transition duration-300 text-sm contact booking">Contact</a>
+        </div>
+    </div>
+
+    
+
+    <!--HERO-->
+    <div id="hero" class="flex flex-col justify-center items-center bg-[url('/img/HeroImage.png')] bg-cover w-full bg-right h-60 md:h-96 gap-2 -mt-20 pt-8 ">
+       <p class="font-playfair text-beige text-3xl text-center md:text-6xl">Indulge in Perfection</p>
+       <p class="font-latto text-beige text-center md:text-4xl md:mb-5">Experience the Art of Fine Dining</p>
+       <button id="" class=" bg-transparent border border-beige text-beige font-lato px-4 py-1  hover:bg-beige hover:text-black transition duration-300 ease-in-out text-base md:text-xl md:px-8 md:py-2 booking">
+        Reserve Your Table
+    </button>
+    
+    </div>
+
+
+
+    <!--HERO MESSAGE-->
+    <div class="container mx-auto px-5 md:px-52 md:my-24">
+        <p class="text-xl md:text-4xl font-playfair pb-4 py-10 md:py-0">A Taste of Elegance Awaits</p>
+        <p class="text-sm md:text-lg font-lato text-darkgray md:mt-3">Welcome to Opulence, where culinary artistry meets luxurious dining. We believe that every meal should be a celebration of flavors, textures, and experiences.<br> Our talented chefs craft exquisite dishes using the finest ingredients, ensuring a memorable experience for every guest.</p>
+    </div>
+    <div class="container hidden md:block mx-auto md:px-52 md:my-20 px-5">
+        <hr>
+    </div>
+    <!--FEATURED DISHES-->
+    <div class="container mx-auto md:px-52 md:my-20 px-5">
+        <p class=" mx-auto text-xl mt-4 md:text-4xl font-playfair pb-4 py- md:mb-4">Featured Dishes</p>
+        <div class="flex flex-col">
+                <div class="flex px-4 flex-col">
+                    <div class="flex flex-col mb-2">
+                        <div class="flex justify-between items-end">
+                            <h3 class="text-base font-playfair md:text-2xl">Truffle Risotto Arancini</h3>
+                            
+                            <p class="md:text-sm text-gray-500 self-end">$15.99</p>
+                        </div>
+                        <p class="mt-1 text-gray-700 text-sm md:text-base font-lato">Crispy risotto balls infused with truffle oil, served with a saffron aioli</p>
+                    </div>
+                    <div class="flex flex-col mb-2">
+                        <div class="flex justify-between items-end">
+                            <h3 class="text-base font-playfair md:text-2xl">Seared Scallops</h3>
+                            <p class="text-sm md:text-base text-gray-500 self-end">$19.99</p>
+                        </div>
+                        <p class="mt-1 text-gray-700 text-sm md:text-base font-lato">Pan-seared scallops with a citrus beurre blanc, garnished with microgreens</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col px-4">
+                    <div class="flex flex-col mb-2">
+                        <div class="flex justify-between items-end">
+                            <h3 class="text-base font-playfair md:text-2xl">Filet Mignon</h3>
+                            <p class="text-sm md:text-base text-gray-500 self-end">$45.00</p>
+                        </div>
+                        <p class="mt-1 text-gray-700 text-sm md:text-base font-lato">Tender filet mignon cooked to perfection, served with a rich red wine reduction and truffle mashed potatoes</p>
+                    </div>
+                    <div class="flex flex-col mb-2">
+                        <div class="flex justify-between items-end">
+                            <h3 class="text-base font-playfair md:text-2xl">Lobster Ravioli</h3>
+                            <p class="text-sm md:text-base text-gray-500 self-end">$39.99</p>
+                        </div>
+                        <p class="mt-1 text-gray-700 text-sm md:text-base font-lato">Handmade lobster-filled ravioli tossed in a light lemon-butter sauce, garnished with chives</p>
+                    </div>
+                </div>            
+                <div class="flex flex-col px-4">
+                    <div class="flex flex-col mb-2">
+                        <div class="flex justify-between items-end">
+                            <h3 class="text-base font-playfair md:text-2xl">Chocolate Soufflé</h3>
+                            <p class="text-sm md:text-base text-gray-500 self-end">$12.00</p>
+                        </div>
+                        <p class="mt-1 text-gray-700 text-sm md:text-base font-lato">Rich and airy chocolate soufflé served with homemade vanilla bean ice cream</p>
+                    </div>
+                    <div class="flex flex-col mb-2">
+                        <div class="flex justify-between items-end">
+                            <h3 class="text-base font-playfair md:text-2xl">Pistachio Baklava</h3>
+                            <p class="text-sm md:text-base text-gray-500 self-end">$09.99</p>
+                        </div>
+                        <p class="mt-1 text-gray-700 text-sm md:text-base font-lato">Flaky pastry layers filled with pistachios and honey syrup, served with rosewater ice cream</p>
+                    </div>
+                </div>
+                <div class="flex flex-col px-4">
+                    <div class="flex flex-col mb-2">
+                        <div class="flex justify-between items-end">
+                            <h3 class="text-base font-playfair md:text-2xl">Opulence Martini</h3>
+                            <p class="text-sm md:text-base text-gray-500 self-end">$45.00</p>
+                        </div>
+                        <p class="mt-1 text-gray-700 text-sm md:text-base font-lato">Premium vodka, elderflower liqueur, and a splash of champagne</p>
+                    </div>
+                    <div class="flex flex-col mb-2">
+                        <div class="flex justify-between items-end">
+                            <h3 class="text-base font-playfair md:text-2xl">Vintage Wine Selection</h3>
+                            <p class="text-sm md:text-base text-gray-500 self-end">$Varies</p>
+                        </div>
+                        <p class="mt-1 text-gray-700 text-sm md:text-base font-lato">Curated selections of rare and vintage wines</p>
+                    </div>
+                </div>
+
+    </div>
+    <div class="flex justify-center my-4">
+    <button id="view-menu" class="view-menu text-center inline-block w-auto bg-transparent border border-darkgray text-darkgray font-lato px-4 py-1  md:text-lg">
+        View Full Menu
+    </button>
+    </div>
+    </div>
+    <div class="container hidden md:block mx-auto md:px-52 md:my-20 px-5">
+    <hr>
+    </div>
+    <!--BOOK-->
+
+    <div class="container md: md:my-20 md:px-56 mx-auto px-7 md:flex md:flex-col justify-start">
+        <p class="text-xl md:text-4xl font-playfair pb-4 py-10 md:mb-4">Schedule Your Visit</p>
+        <div class="map-responsive border">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d415.0007103462048!2d-106.68647901253982!3d35.01462167301223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87220d0a121604ed%3A0xc185463b0a72dca6!2sLos%20Pollos%20Hermanos!5e0!3m2!1sen!2sin!4v1728662044583!5m2!1sen!2sin"  
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        <div class="flex flex-col items-start space-y-2 my-3 text-sm md:text-base">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-map-marker-alt text-darkgray"></i>
+                <span class="text-gray-700">Opulence, Albuquerque, NM, United States</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-clock text-darkgray"></i>
+                <span class="text-gray-500">Open Daily: 11:00 - 23:00</span>
+            </div>
+            <div class="flex justify-end md:justify-between md:items-center w-full">
+                <div class="md:flex-grow"></div> 
+                <button id="reserve" class="text-center inline-block w-auto bg-transparent border border-darkgray text-darkgray font-lato px-4 py-1  md:text-lg booking">
+                    Reserve Your Seat
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--FAQS-->
+
+    <div class="container md:mb-36 md:px-56 mx-auto px-7">
+        <h2 class="text-xl md:text-4xl font-playfair pb-4 pb-10 md:mb-4">Frequent Queries</h2>
+        <div class="flex flex-col space-y-4 font-lato">
+            <div class="border-b pb-2">
+                <p class="text-base md:text-lg">What types of services does Opulence offer?</p>
+                <p class="text-darkgray text-sm md:text-base">Opulence specializes in luxury dining experiences, featuring a curated menu of gourmet dishes crafted from the finest ingredients, complemented by exceptional service.</p>
+            </div>
+            <div class="border-b pb-2">
+                <p class="text-base md:text-lg">How can I make a reservation?</p>
+                <p class="text-darkgray text-sm md:text-base">Reservations can be made directly through our website or by contacting our customer service team via phone. We recommend booking in advance to secure your preferred dining time.</p>
+            </div>
+            <div class="border-b pb-2">
+                <p class="text-base md:text-lg">Is there a dress code for dining at Opulence?</p>
+                <p class="text-darkgray text-sm md:text-base">Yes, we maintain a smart casual dress code to enhance the dining experience. Guests are encouraged to dress elegantly while enjoying their meal.</p>
+            </div>
+            <div class="border-b pb-2">
+                <p class="text-base md:text-lg">Do you accommodate dietary restrictions?</p>
+                <p class="text-darkgray text-sm md:text-base">Absolutely! Our chefs are happy to accommodate various dietary restrictions and preferences. Please inform us of any specific requirements when making your reservation.</p>
+            </div>
+            <p class="mt-4 text-gray-500">For more queries, visit our <a href="#" class="text-darkgray underline  contact">Contact Us</a> page.</p>
+        </div>
+    </div>
+    <!--GALLARY-->
+    <div class="my-16">
+        <div class="carousel-container relative w-full overflow-hidden h-60 md:h-96">
+        <div id="carousel-images" class="h-full relative md:mx-60">
+            <img src="./img/ImageGallary1.png" loading="lazy" alt="Gallery Image 1" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+            <img src="./img/ImageGallary2.png" loading="lazy" alt="Gallery Image 2" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+            <img src="./img/ImageGallary3.png" loading="lazy" alt="Gallery Image 3" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+            <img src="./img/ImageGallary4.png" loading="lazy" alt="Gallery Image 4" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+        </div>
+    </div>
+    <h2 class="text-xl text-center md:text-2xl font-playfair pb-4 py-10 md:mb-4">We look forward to welcoming you at Opulence soon</h2>
+    </div>
+    
+    <footer class="bg-darkgray2 py-6 mt-20">
+        <div class="container mx-auto flex flex-col items-center space-y-4">
+            <div class="flex space-x-6">
+                <a href="tel:+1234567890" class="text-white">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="text-white">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com/" target="_blank" class="text-white">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p class="text-white text-sm md:text-base md:text-sm">© All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <div id="contact-popup" class="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-60 hidden">
+        <div class="bg-white -lg shadow-lg p-6 md:flex md:items-center">
+            <div class="md:px-10">
+                <h2 class="text-2xl text-center md:text-4xl font-playfair mb-4">Get in Touch</h2>
+                <div class="flex flex-col md:flex-row md:space-x-4 mb-4">
+                    <input type="text" placeholder="First Name" class="border-b border-darkgray bg-transparent mb-2 md:mb-0 p-2 w-full">
+                    <input type="text" placeholder="Last Name" class="border-b border-darkgray bg-transparent p-2 w-full">
+                </div>
+                <div class="flex flex-col mb-4">
+                    
+                    <input type="email" placeholder="Email" class="border-b border-darkgray bg-transparent p-2">
+                </div>
+                <div class="flex flex-col mb-4">
+                    <textarea placeholder="Your Query" class="border border-darkgray bg-transparent p-2 h-32"></textarea>
+                </div>
+                <button class="bg-darkgray w-full text-white font-lato px-4 py-2" id="submit-query">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="reserve-popup" class="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-60 hidden">
+        <div class="bg-white -lg shadow-lg p-6 md:flex md:items-center">
+            
+            <div class="md:px-10">
+                <h2 class="text-2xl text-center md:text-4xl font-playfair mb-4">Reserve Your Seat</h2>
+                
+                <form id="reserve-form">
+                    <div class="flex flex-col md:flex-row md:space-x-4 mb-4">
+                        <input type="text" placeholder="First Name" id="first-name" class="border-b border-darkgray bg-transparent mb-2 md:mb-0 p-2 w-full" required>
+                        <input type="text" placeholder="Last Name" id="last-name" class="border-b border-darkgray bg-transparent p-2 w-full" required>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <input type="email" placeholder="Email" id="email" class="border-b border-darkgray bg-transparent p-2" required>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <input type="tel" placeholder="Phone Number" id="phone" class="border-b border-darkgray bg-transparent p-2" required>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:space-x-4 mb-4">
+                        <input type="number" placeholder="No. of Guests" id="guests" class="border-b mb-4 border-darkgray bg-transparent p-2 w-full" min="1" required>
+                        <input type="date" id="date" class="mb-4 text-darkgray border-b border-darkgray bg-transparent p-2 w-full" required>
+                        <input type="time" id="time" class="mb-4 border-b border-darkgray bg-transparent p-2 w-full" required>
+                    </div>
+                    <button class="bg-darkgray w-full text-white font-lato px-4 py-2 " id="submit-reservation">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./script/global.js"></script>
+    <script src="./script/index.js"></script>
+</body>
+</html>
