@@ -18,7 +18,7 @@ export default function Techstack() {
   }
 
   return (
-    <div className="flex flex-col md:h-[calc(80vh-2.5rem)] xl:h-[calc(65vh-2.5rem)] 2xl:h-[calc(50vh-2.5rem)] fade-in-section justify-center bg-black text-lightBeige ml-8 mr-8 md:ml-20 md:mr-20 lg:mr-20 xl:mx-32 2xl:mx-64 mt-16 xl:mt-32 2xl:mt-64">
+    <div className="flex flex-col md:min-h-[calc(80vh-2.5rem)] xl:h-[calc(65vh-2.5rem)] 2xl:h-[calc(50vh-2.5rem)] fade-in-section justify-center bg-black text-lightBeige ml-8 mr-8 md:ml-20 md:mr-20 lg:mr-20 xl:mx-32 2xl:mx-64 mt-16 xl:mt-32 2xl:mt-64">
       <h2 className="text-2xl md:text-4xl font-semibold mb-2 text-lightBeige xl:text-5xl 2xl:text-6xl xl:mb-6 2xl:mb-8">Technologies used</h2>
       <p className="text-secondaryBeige mb-8 xl:text-3xl 2xl:text-4xl xl:mb-12 2xl:mb-16">
         Behind every project is a carefully chosen set of tools. This is the stack that powers my creations.

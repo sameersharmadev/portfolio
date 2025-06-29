@@ -1,8 +1,9 @@
 import fitFocus from '../img/projects/fitfocus.png'
 import opulence from '../img/projects/opulence.png'
 import speedmaster from '../img/projects/speedmaster.png'
+import devlog from '../img/projects/devlog.png'
 
-const featured = [
+export const projects = [
     {
         id: 1,
         title: "FitFocus",
@@ -31,5 +32,23 @@ const featured = [
         source: "https://github.com/sameersharmadev/speedmaster"
     }
 ]
-
-export default featured;
+export const featured = [
+    {
+        id: 4,
+        title: "Devlog",
+        img: devlog,
+        desc: "Devlog is a collaborative blogging platform focused on user experience, customizability, and modern full-stack practices.",
+        detailedDesc: `
+        <p><strong>Devlog</strong> is a collaborative blogging platform built with a focus on user experience, customizability, and modern development best practices.</p>
+        <ul>
+            <li> <strong>Auth:</strong> JWT-based login with password hashing and Google OAuth.</li>
+            <li> <strong>Profiles:</strong> Public user profiles with avatars, bio, post count, ratings, and social features.</li>
+            <li> <strong>Markdown Editor:</strong> Rich formatting toolbar, image uploads via Supabase, and SEO-optimized posts.</li>
+            <li> <strong>Discovery:</strong> Real-time global search, For You and Trending feeds.</li>
+            <li> <strong>Backend:</strong> PostgreSQL schema, Supabase storage, and robust error handling.</li>
+        </ul>`,
+        stack: ["React", "Node.js", "PostgreSQL", "Supabase"],
+        website: "https://speedmaster.sameersharma.me/",
+        source: "https://github.com/sameersharmadev/speedmaster"
+    }
+]

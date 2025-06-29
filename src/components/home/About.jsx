@@ -5,7 +5,7 @@ import Terminal from './Terminal'
 
 export default function About() {
     return (
-        <div className="relative md:h-[calc(100vh-2.5rem)] flex justify-between items-center fade-in-section bg-black text-lightBeige">
+        <div className="relative md:min-h-[calc(100vh-2.5rem)] flex justify-between items-center fade-in-section bg-black text-lightBeige">
             <div className="w-full lg:w-1/2 ml-4 mr-4 md:ml-20 md:mr-20 lg:mr-4 xl:mx-32 2xl:mx-64 md:h-[66vh]">
                 <h2 className="text-2xl mt-8 md:mt-0 md:text-4xl font-semibold md:-mt-8 mb-6 xl:text-6xl 2xl:text-7xl xl:mb-10 2xl:mb-12">
                     About me
