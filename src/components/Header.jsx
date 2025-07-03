@@ -37,8 +37,7 @@ export default function Header() {
 
         {/* Download Resume & Menu Toggle */}
         <div className="flex items-center gap-4 xl:gap-6">
-          {/* Simple Download Resume Link */}
-          <a href="/resume.pdf" download className="hidden md:flex items-center gap-1 text-sm md:text-base xl:text-xl 2xl:text-2xl mr-6">
+          <a href="/sameer sharma resume.pdf" download className="hidden md:flex items-center gap-1 text-sm md:text-base xl:text-xl 2xl:text-2xl mr-6">
             <FontAwesomeIcon icon={faFile} />
             Download Resume
           </a>

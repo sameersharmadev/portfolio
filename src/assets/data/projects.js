@@ -2,6 +2,7 @@ import fitFocus from '../img/projects/fitfocus.png'
 import opulence from '../img/projects/opulence.png'
 import speedmaster from '../img/projects/speedmaster.png'
 import devlog from '../img/projects/devlog.png'
+import chrono from '../img/projects/chrono.png'
 
 export const projects = [
     {
@@ -48,7 +49,28 @@ export const featured = [
             <li> <strong>Backend:</strong> PostgreSQL schema, Supabase storage, and robust error handling.</li>
         </ul>`,
         stack: ["React", "Node.js", "PostgreSQL", "Supabase"],
-        website: "https://speedmaster.sameersharma.me/",
-        source: "https://github.com/sameersharmadev/speedmaster"
+        website: "https://devlog.sameersharma.me/",
+        source: "https://github.com/sameersharmadev/devlog"
+    },
+    {
+        id: 5,
+        title: "Chrono",
+        img: chrono,
+        desc: "Chrono is a powerful, minimalist task management system designed to boost productivity through structured workflows, intuitive UI, and Pomodoro-based focus sessions.",
+        detailedDesc: `
+        <div>
+  <p><strong>Chrono</strong> is a powerful, minimalist task management system designed to boost productivity through structured workflows, intuitive UI, and Pomodoro-based focus sessions.</p>
+  <br/>
+  <ul>
+    <li><strong>Tasks:</strong> Create, update, and organize tasks with due dates, reminders, and priority levels.</li>
+    <li> <strong>Auth:</strong> JWT-based login with password hashing and Google OAuth.</li>
+    <li><strong>Calendar View:</strong> Full-screen monthly calendar with visual indicators for due tasks, reminders, and progress.</li>
+    <li><strong>Stats & Streaks:</strong> Weekly summaries, daily streak tracking, and task completion charts.</li>
+    <li><strong>Backend:</strong> PostgreSQL schema with task logs, tags, and reminders (via cron).</li>
+  </ul>
+</div>`,
+        stack: ["React", "Express.js", "PostgreSQL", "Supabase"],
+        website: "https://chrono.sameersharma.me/",
+        source: "https://github.com/sameersharmadev/chrono"
     }
 ]
