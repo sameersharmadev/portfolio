@@ -175,6 +175,7 @@ export default function Contact() {
               </button>
 
             </div>
+            <p className="text-gray-400">(Please enter correct email so I can reach back)</p>
 
             {resultIcon === 'error' && status && (
               <p className="text-sm xl:text-lg 2xl:text-xl text-red-400">{status}</p>
